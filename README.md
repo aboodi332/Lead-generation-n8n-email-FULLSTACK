@@ -1,213 +1,133 @@
-frontend live URL(vercel):[https://lead-generation-frontend-t-git-f948d4-puneetharaj-k-rs-projects.vercel.app/](https://lead-generation-frontend-t-git-f948d4-puneetharaj-k-rs-projects.vercel.app/)
+# Lead Generation System with n8n, React, and Express.js 🚀
+
+![Lead Generation](https://img.shields.io/badge/Lead%20Generation%20System-Ready-brightgreen)
+
+Welcome to the **Lead Generation System** repository! This project combines the power of React for the frontend, Express.js for the backend, and n8n for workflow automation. It is designed to streamline lead capture, automate tasks, and provide scalability for future integrations.
+
+## Table of Contents
 
-backend live URL(render): [https://lead-generation-backend-to-send-email.onrender.com]()
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Workflows](#workflows)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
 
-full stack live URL (vercel): [https://lead-generation-frontend-t-git-f948d4-puneetharaj-k-rs-projects.vercel.app/
-]()
+## Features
 
-screen record link: https://drive.google.com/file/d/1W7bUDUmxXfR1MD82ddilYL_v7YbksPTV/view?usp=sharing
+- **Fullstack Solution**: Built with React, Express.js, and n8n.
+- **Lead Capture**: Easily capture leads from your website.
+- **Automated Workflows**: Trigger n8n workflows for tasks like sending email alerts.
+- **Scalable Architecture**: Ready for future CRM or database integrations.
+- **Responsive Design**: Works seamlessly on all devices.
 
-## 1. Frontend - `lead-gen-frontend`
+## Technologies Used
 
-**Technology:** React.js
+- **Frontend**: React.js
+- **Backend**: Express.js
+- **Database**: SQLite
+- **Workflow Automation**: n8n
+- **Languages**: JavaScript
+- **Development Stack**: MERN (MongoDB, Express.js, React.js, Node.js)
 
-**Purpose:** Lead Capture Form that sends data to backend
+## Installation
 
----
+To get started with this project, follow these steps:
 
-## Setup Instructions
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK.git
+   ```
 
-#### Install Dependencies
+2. **Navigate to the project directory**:
+   ```bash
+   cd Lead-generation-n8n-email-FULLSTACK
+   ```
 
-#### Environment Variables
+3. **Install dependencies**:
+   - For the frontend:
+     ```bash
+     cd client
+     npm install
+     ```
+   - For the backend:
+     ```bash
+     cd server
+     npm install
+     ```
 
-Create a `.env` file in the root:
+4. **Set up the database**:
+   - Ensure SQLite is installed on your machine.
+   - Create a database file in the server directory.
 
-REACT_APP_API_URL=http://localhost:5000/api/leads
+5. **Run the application**:
+   - Start the backend server:
+     ```bash
+     cd server
+     npm start
+     ```
+   - Start the frontend:
+     ```bash
+     cd client
+     npm start
+     ```
 
-If deployed, replace the URL with your backend’s hosted domain.
+## Usage
 
----
+Once the application is running, you can access it in your web browser at `http://localhost:3000`. 
 
-### Run React App
+- **Capture Leads**: Fill out the lead capture form to test the functionality.
+- **Automated Emails**: Check your email to see if the automated alerts are working.
 
-npm start
+## Workflows
 
----
+n8n provides powerful workflow automation capabilities. Here’s how to set up a basic workflow:
 
-### How it Works
+1. **Create a New Workflow**: Open n8n and create a new workflow.
+2. **Add Trigger**: Use an HTTP webhook as the trigger.
+3. **Add Email Node**: Configure the email node to send alerts.
+4. **Connect Nodes**: Link the trigger to the email node.
+5. **Activate Workflow**: Make sure to activate your workflow to start receiving leads.
 
-* **LeadForm.js** captures `name`, `email`, `company`, and `message`.
-* Sends a **POST request** to `/api/leads` on the backend.
-* Displays status message upon success or failure.
+For detailed instructions on setting up workflows, refer to the [n8n documentation](https://docs.n8n.io).
 
----
+## API Endpoints
 
-## Folder Structure
+The backend provides several API endpoints to interact with the lead generation system:
 
-Frontend (React) - lead-gen-frontend -
+- **POST /api/leads**: Create a new lead.
+- **GET /api/leads**: Retrieve all leads.
+- **GET /api/leads/:id**: Retrieve a specific lead by ID.
+- **DELETE /api/leads/:id**: Delete a lead by ID.
 
-lead-gen-frontend/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   └── LeadForm.js
-│   ├── App.js
-│   └── index.js
-├── .env
-├── package.json
-└── README.md
+### Example Usage
 
-## 2. Backend (API)
+To create a new lead, you can use the following curl command:
 
-* Objective: Create a backend API Node.js (Express) that:
-  * Accepts POST requests containing the form data (name, email, company, message).
-  * Validates the data to ensure it meets the necessary format.
-  * Sends the data to n8n for further processing (e.g., email notification).
+```bash
+curl -X POST http://localhost:5000/api/leads -H "Content-Type: application/json" -d '{"name": "John Doe", "email": "john@example.com"}'
+```
 
-    Technologies:Node.js (Express).
+## Contributing
 
-    Expected Outcome: A backend that processes form data and forwards it to n8n via 		 an HTTP request for further automation.
+We welcome contributions! To contribute:
 
-3. n8n Workflow Automation
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to your branch and create a pull request.
 
-* Objective: Set up an n8n workflow to automate the following tasks:
-  Trigger: The workflow should trigger when a new lead is submitted via the backend (e.g., via a webhook or HTTP request).
-  * Email Notification: Once the lead is received, n8n should send an email notification to the sales team with the lead’s details.
-  * Use SendGrid, Mailgun, or SMTP for email integration.
-  * Optional: Store the lead data in a simple database (e.g., Google Sheets, Airtable, or MySQL) through n8n.
+## License
 
-## Backend - `lead-gen-backend`
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-**Technology:** Node.js, Express, SQLite
+## Releases
 
-**Purpose:** Accepts form submissions, stores in DB, triggers `n8n` webhook.
+For the latest releases, visit our [Releases page](https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/releases). Here you can find downloadable files and release notes.
 
----
+## Conclusion
 
-### Setup Instructions
-
-#### Install Dependencies
-
-cd lead-gen-backend
-npm install
-
-### Environment Variables
-
-    Create a`.env` file in the root:
-
-    PORT=5000
-
-    Use either the production or test n8n webhook
-
-    N8N_WEBHOOK_URL=https://puneetharajkr.app.n8n.cloud/webhook/lead
-
-### Run Backend Server
-
-    npm start
-
-> server runs on `http://localhost:5000`
-
----
-
-### How it Works
-
-* Receives `POST` request at `/api/leads`.
-* Stores the lead into `SQLite` database.
-* Forwards the same data to your `n8n` workflow using webhook URL.
-
-### POST Endpoint
-
-    POST /api/leads
-	Content-Type: application/json
-
-    {
- 	 "name": "John Doe",
-  	"email": "john@example.com",
- 	 "company": "ABC Corp",
- 	 "message": "Interested in demo"
-	}
-
-## 📁 Folder Structure
-
-lead-gen-backend/
-├── db/
-│   └── database.js           # SQLite DB setup
-├── routes/
-│   └── leads.js              # Route to handle lead submission
-├── .env                      # Config variables
-├── leads.db                  # SQLite database file
-├── server.js                 # Express server entry
-├── package.json
-└── README.md
-
-## 3. Automation - `n8n Workflow`
-
-**Goal:** Send lead info via Email using SMTP (Gmail or custom)
-
----
-
-## n8n Webhook Setup
-
-#### Trigger (Webhook node)
-
-* Method: `POST`
-* URL: `/webhook/lead`
-
-#### 🔄 Set Node (Map incoming body)
-
-> Use `Manual Mapping` and add values as:
-
-* **This ensures proper extraction.**
-  Name: {{ $json["body"]["name"] || "" }}
-  Email: {{ $json["body"]["email"] || "" }}
-  Company: {{ $json["body"]["company"] || "" }}
-  Message: {{ $json["body"]["message"] || "" }}
-
-  in value in expression mode
-
----
-
----
-
-#### Email Node
-
-* SMTP credentials: Use your own or Gmail SMTP
-* Set **Text field** (Expression mode) as:
-
-  Name: {{ $json["name"] }}
-  Email: {{ $json["email"] }}
-  Company: {{ $json["company"] }}
-  Message: {{ $json["message"] }}
-
-> No backticks. Keep it in**plain text** .
-
----
-
-### Sample Email Output
-
-    Name: Puneeth Raj
-	Email: puneeth@example.com
-	Company: Error Technologies
-	Message: I’m interested in your services.
-
----
-
-### Test Your Workflow
-
-1. Run frontend form
-2. Backend stores in DB
-3. Backend hits n8n webhook
-4. n8n sends formatted email
-
-   You should receive email with all data filled.
-
----
-
-### Deployment Checklist
-
-* React app hosted (e.g., Netlify)
-* Backend deployed (e.g., Render, Railway)
-* `hah .env` URLs updated accordingly
-* n8n production webhook used
+Thank you for checking out the Lead Generation System! We hope you find it useful for your projects. If you have any questions or suggestions, feel free to reach out. Happy coding!
